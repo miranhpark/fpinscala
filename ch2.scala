@@ -20,7 +20,7 @@ object MyModule { // Declares class and its only instance (singleton)
 		def go(n: Int, acc:Int): Int = 
 			if (n <= 0) acc
 			else go(n - 1, n*acc)
-		go(n,1)
+		go(n, 1)
 	}
 		
 	def fib_r(n: Int): Int = {
