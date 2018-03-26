@@ -3,6 +3,7 @@
 // package fpinscala.datastructures
 
 // List data type
+
 sealed trait List[+A] // +A means A is covariant - if X is a subtype of Y, List[X] is a subtype of List[Y]
 case object Nil extends List[Nothing] // Constructor representing empty list
 case class Cons[+A](head: A, tail: List[A]) extends List[A] // Constructor representing nonempty lists
