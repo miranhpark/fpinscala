@@ -31,7 +31,7 @@
   * logic is "interleaved" (some people call streams "first-class loops")
   * - Since streams aren't generated, transformations only require enough working memory
   * to store and transform the current element
-  * - Because of the incrementality, functons here work on infinite streams (neato!!)
+  * - Because of the incrementality, functions here work on infinite streams (neato!!)
   * e.g. val ones: Stream[Int] = Stream.cons(1, ones)
   */
 

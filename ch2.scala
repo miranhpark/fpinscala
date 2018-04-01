@@ -15,20 +15,20 @@ object MyModule { // Declares class and its only instance (singleton)
 	def abs(n: Int): Int = // Takes integer and returns integer
 		if (n < 0) -n // Returns negation if negative
 	    else n
-		
+
 	def factorial(n: Int): Int = {
-		def go(n: Int, acc:Int): Int = 
+		def go(n: Int, acc:Int): Int =
 			if (n <= 0) acc
 			else go(n - 1, n*acc)
 		go(n, 1)
 	}
-		
+
 	def fib_r(n: Int): Int = {
 		if (n <= 1) 0
 		else if (n == 2) 1
 		else fib_r(n - 1) + fib_r(n - 2)
 	}
-	
+
   def fib_tr(n: Int): Int = {
     def go(n: Int, fib1: Int, fib2: Int): Int =
     if (n <= 1) fib1
